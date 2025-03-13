@@ -15,7 +15,7 @@ struct GithubRepoTestTests {
         let model = ContentViewModel()
         
         #expect(model.imageName == "globe")
-        #expect(model.message == "Hello World!")
+        #expect(model.message == "Hello, world!")
     }
 
 }
