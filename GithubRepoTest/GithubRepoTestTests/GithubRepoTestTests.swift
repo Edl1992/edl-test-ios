@@ -10,8 +10,12 @@ import Testing
 
 struct GithubRepoTestTests {
 
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+    @Test("Sample test")
+    func example() async throws {
+        let model = ContentViewModel()
+        
+        #expect(model.imageName == "globe")
+        #expect(model.message == "Hello World!")
     }
 
 }

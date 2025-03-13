@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let viewModel: ContentViewModel = ContentViewModel()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: viewModel.imageName)
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text(viewModel.message)
         }
         .padding()
     }
